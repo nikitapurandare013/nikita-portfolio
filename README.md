@@ -1,16 +1,38 @@
-# React + Vite
+# 🚀 Nikita Purandare — Portfolio (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains my **personal portfolio website**, built with **React + Vite**, showcasing my skills, projects, and interests in **Artificial Intelligence, Data Science, and Full-Stack Development** 🤖📊💻
 
-Currently, two official plugins are available:
+🌐 **Live Portfolio:**  
+👉 https://nikitapurandare013.github.io/nikita-portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚛️ **React**
+- ⚡ **Vite**
+- 🟨 **JavaScript (ES6+)**
+- 🎨 **CSS / Tailwind CSS**
+- 🎞 **Framer Motion**
+- 🔍 **ESLint**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Highlights
+
+- ⚡ High-performance build with Vite
+- 📱 Fully responsive design
+- 🧩 Modular React components
+- 🎬 Smooth animations & transitions
+- 🖼 Optimized asset handling
+
+---
+
+## 🧠 About Me
+
+I’m an **AI & Data Science enthusiast** passionate about building intelligent, data-driven solutions using **Machine Learning, NLP, Deep Learning, and Generative AI**.
+
+
+---
+
+Built with ❤️ using **React + Vite** ⚛️⚡  

@@ -32,69 +32,46 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="relative noise-overlay py-20">
-      <div className="absolute inset-0"></div>
-      <div className="relative max-w-7xl mx-auto px-6">
+  <section id="experience" className="relative noise-overlay py-20">
+    <div className="absolute inset-0"></div>
+
+    <div className="relative max-w-7xl mx-auto px-6">
       <h2 className="text-3xl font-bold text-center mb-10 text-blue-300">
         Experience
       </h2>
 
-      {openLetter !== null ? (
-        <div className="space-y-4">
-          <button
-            onClick={() => setOpenLetter(null)}
-            className="px-4 py-2 rounded-lg bg-slate-800 text-white hover:bg-slate-700 transition"
+      <div className="space-y-10">
+        {experiences.map((exp, i) => (
+          <div
+            key={i}
+            className="border-l-2 border-blue-500/50 pl-6 p-5 rounded-lg
+                       hover:bg-white/5 transition"
           >
-            ← Back
-          </button>
-
-          <iframe
-            src={experiences[openLetter].letter}
-            className="w-full h-[650px] border border-slate-700 rounded-lg shadow"
-            title="Completion Letter"
-          />
-        </div>
-      ) : (
-        <div className="space-y-10">
-          {experiences.map((exp, i) => (
-            <div
-              key={i}
-              className="border-l-2 border-blue-500/50 pl-6 p-5 rounded-lg
-                         hover:bg-white/5 transition"
-            >
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
-                <h3 className="text-xl font-semibold text-blue-400 hover:text-blue-300 transition">
-                  {exp.role}
-                </h3>
-                <p className="text-sm text-slate-400">{exp.duration}</p>
-              </div>
-
-              <p className="text-white/90 font-medium mb-3">
-                {exp.company}
-              </p>
-
-              <ul className="list-disc list-inside space-y-2 mb-4">
-                {exp.details.map((d, j) => (
-                  <li
-                    key={j}
-                    className="text-white/80 hover:text-slate-300 transition-colors"
-                  >
-                    {d}
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                onClick={() => setOpenLetter(i)}
-                className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-500 transition"
-              >
-                View Completion Letter
-              </button>
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+              <h3 className="text-xl font-semibold text-blue-400 hover:text-blue-300 transition">
+                {exp.role}
+              </h3>
+              <p className="text-sm text-slate-400">{exp.duration}</p>
             </div>
-          ))}
-        </div>
-      )}
+
+            <p className="text-white/90 font-medium mb-3">
+              {exp.company}
+            </p>
+
+            <ul className="list-disc list-inside space-y-2">
+              {exp.details.map((d, j) => (
+                <li
+                  key={j}
+                  className="text-white/80 hover:text-slate-300 transition-colors"
+                >
+                  {d}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
-    </section>
-  );
+  </section>
+);
 }
