@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Tech from "../assets/Tech.jpg";
 
 export default function Skills() {
   const skillGroups = {
@@ -44,7 +45,7 @@ export default function Skills() {
           <div className="relative">
             <div className="absolute -inset-4 bg-blue-600/20 blur-2xl rounded-xl"></div>
             <img
-              src="/Tech.jpg"   
+              src={Tech}  
               alt="AI Core"
               className="relative rounded-xl border border-blue-500/20"
             />

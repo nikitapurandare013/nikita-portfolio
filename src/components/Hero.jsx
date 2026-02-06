@@ -1,4 +1,8 @@
 import { motion } from "framer-motion";
+import humanAI from "../assets/Human_AI.jpg";
+import ai from "../assets/AI.jpg";
+import futureAI from "../assets/Future_AI.jpg";
+
 
 export default function Hero() {
   return (
@@ -47,13 +51,9 @@ export default function Hero() {
         </a>
       </div>
 
-      {/* 🔥 AI Images BELOW buttons (NEW) */}
+      {/* 🔥 AI Images BELOW buttons */}
       <div className="mt-10 flex gap-6 justify-center items-center flex-wrap">
-        {[
-          "/Human_AI.jpg",
-          "/AI.jpg",
-          "/Future_AI.jpg",
-        ].map((img, i) => (
+        {[humanAI, ai, futureAI].map((img, i) => (
           <motion.img
             key={i}
             src={img}

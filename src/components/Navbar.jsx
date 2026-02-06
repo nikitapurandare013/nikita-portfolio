@@ -1,3 +1,4 @@
+import linkedin from '../assets/linkedin.jpeg';
 export default function Navbar() {
   return (
     <nav
@@ -13,7 +14,7 @@ export default function Navbar() {
         {/* Left side */}
         <div className="flex items-center space-x-3">
           <img
-            src="/linkedin.jpeg"
+            src={linkedin}
             alt="Nikita Purandare"
             className="w-10 h-10 rounded-full object-cover border border-gray-300 shadow-sm"
           />
